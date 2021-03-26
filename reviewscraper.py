@@ -1,4 +1,5 @@
 import requests
+import json
 from random import randint
 from time import sleep
 from bs4 import BeautifulSoup as soup
@@ -14,6 +15,11 @@ bs_obj = soup(city_page.content, 'html.parser')
 def StrToInt(text):
     return int(text.replace(',',''))
 
+def bubbleRatingVal(tags):
+    rating = [value for element in tags.find_all(class_=True) 
+        for value in element["class"]]
+    rating = rating[1]
+    return int(rating[(rating.find('_')+1):(rating.find('_')+3)])
 
 def makeReviewPageLinks(bs_obj, reviews = 10):
     """ TripAdvisor review pages links for city-specific hotels """
@@ -44,7 +50,7 @@ hotel_links = makeReviewPageLinks(bs_obj, reviews)
 
 
 for link in hotel_links[:int(reviews/3)]:
-    print(link)
+    # print(link)
     review_page = requests.get(link)
     sleep(randint(1,4))
     reviews = soup(review_page.content, 'html.parser')
@@ -59,17 +65,21 @@ for link in hotel_links[:int(reviews/3)]:
         counter = 1
     print(hotel_name, '\n')
     
-    for r in reviews.findAll('q'):
-        print(r)
-        review_text = r.span.text.strip()
-        
-        city_dict[hotel_name]['reviews'].update({f'{counter}': {'review_text': review_text, 'rating': None}})
+    for r in reviews.findAll('div', {'data-test-target':'HR_CC_CARD'}):
+        # print(r,'\n')
+        review_text = r.find('q').get_text() #r.span.text.strip()
+        bubble = r.find('div', {'data-test-target':'review-rating'})
+        rating = bubbleRatingVal(bubble)
+        # print(rating)
+        city_dict[hotel_name]['reviews'].update({f'{counter}': {'review_text': review_text, 'rating': rating}})
         counter += 1
         # print(review_text, '\n')
 
 
-import json
-print()
-print(json.dumps(city_dict, indent=4, sort_keys=True))
 
+# print()
+# print(json.dumps(city_dict, indent=4, sort_keys=True))
+
+with open('data.json', 'w') as outfile:
+    json.dump(city_dict, outfile, indent=4)
 
