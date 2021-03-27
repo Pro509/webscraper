@@ -1,10 +1,9 @@
 import requests
-import math
 import json
 from random import randint
 from time import sleep
 from bs4 import BeautifulSoup as soup
-from progress.bar import Bar, IncrementalBar
+from progress.bar import IncrementalBar
 
 city_url = "https://www.tripadvisor.com/Hotels-g293916-Bangkok-Hotels.html"
 tripadvisor_url = "https://www.tripadvisor.com"
@@ -27,7 +26,7 @@ def makeReviewPageLinks(bs_obj, reviews = 10):
     """ TripAdvisor review pages links for city-specific hotels """
     hotel_links = []
     hotelsReviews = bs_obj.findAll('a', {'class': 'review_count'})
-    bar = Bar('Generating Hotel Links', max = len(hotelsReviews))
+    bar = IncrementalBar('Generating Hotel Links', max = len(hotelsReviews))
     for link in hotelsReviews:
         # print(type(link))
         review_count = StrToInt(link.get_text().split()[0])
@@ -35,10 +34,10 @@ def makeReviewPageLinks(bs_obj, reviews = 10):
         if review_count >= 100:
             # print(review_count, '\n')
             link_suffix = link['href']
-            hotel = tripadvisor_url + link_suffix
-            hotel_links.append(hotel)
+            hotelLink = tripadvisor_url + link_suffix
+            hotel_links.append(hotelLink)
             for i in range(5,reviews-4,5):
-                next_page = hotel[:(hotel.find('Reviews')+7)]+ f'-or{i}' + hotel[(hotel.find('Reviews')+7):]
+                next_page = hotelLink[:(hotelLink.find('Reviews')+7)]+ f'-or{i}' + hotelLink[(hotelLink.find('Reviews')+7):]
                 hotel_links.append(next_page)
         else:
             pass
@@ -51,7 +50,7 @@ def getAvgReview():
 
 def reviewExtract(hotel_links):
     city_dict = dict()
-    bar = IncrementalBar('Generating Reviews', max = len(hotel_links), suffix='%(percent)d%%')
+    bar = IncrementalBar('Extracting Hotel Reviews', max = len(hotel_links), suffix='%(percent)d%%')
     for link in hotel_links:
         # print(link)
         review_page = requests.get(link)
