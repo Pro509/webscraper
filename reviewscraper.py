@@ -5,14 +5,6 @@ from time import sleep
 from bs4 import BeautifulSoup as soup
 from progress.bar import IncrementalBar
 
-city_url = "https://www.tripadvisor.com/Hotels-g293916-Bangkok-Hotels.html"
-tripadvisor_url = "https://www.tripadvisor.com"
-reviews = 15
-city_page = requests.get(city_url)
-print(f"Page Status: {city_page.status_code}")
-
-bs_obj = soup(city_page.content, 'html.parser')
-
 def StrToInt(text):
     return int(text.replace(',',''))
 
@@ -24,6 +16,7 @@ def bubbleRatingVal(tags):
 
 def makeReviewPageLinks(bs_obj, reviews = 10):
     """ TripAdvisor review pages links for city-specific hotels """
+    tripadvisor_url = "https://www.tripadvisor.com"
     hotel_links = []
     hotelsReviews = bs_obj.findAll('a', {'class': 'review_count'})
     bar = IncrementalBar('Generating Hotel Links', max = len(hotelsReviews))
@@ -40,7 +33,8 @@ def makeReviewPageLinks(bs_obj, reviews = 10):
                 next_page = hotelLink[:(hotelLink.find('Reviews')+7)]+ f'-or{i}' + hotelLink[(hotelLink.find('Reviews')+7):]
                 hotel_links.append(next_page)
         else:
-            pass
+            hotelsReviews.remove(link)
+
         bar.next()
     bar.finish()
     return hotel_links
@@ -54,7 +48,7 @@ def reviewExtract(hotel_links):
     for link in hotel_links:
         # print(link)
         review_page = requests.get(link)
-        sleep(randint(1,4))
+        sleep(randint(1,2))
         reviews = soup(review_page.content, 'html.parser')
 
         # Saving hotel name to append page reviews appropriately
@@ -81,11 +75,16 @@ def reviewExtract(hotel_links):
     return city_dict
 
 if __name__=="__main__":
-    hotel_links = makeReviewPageLinks(bs_obj, reviews)
-    data = reviewExtract(hotel_links[:3])
-    # print()
-    # print(json.dumps(city_dict, indent=4, sort_keys=True))
+    city_url = input("City URL: ")
+    reviews = int(input("No. of reviews (in multiples of 5): "))
+    fileName = input("Output file Name: ")
+    city_page = requests.get(city_url)
+    print(f"Your Page Status: {city_page.status_code}")
+    bs_obj = soup(city_page.content, 'html.parser')
 
-    with open('data.json', 'w') as outfile:
+    hotel_links = makeReviewPageLinks(bs_obj, reviews)
+    data = reviewExtract(hotel_links)
+
+    with open(f'{fileName}.json', 'w') as outfile:
         json.dump(data, outfile, indent=4)
 
