@@ -2,6 +2,7 @@ import os
 import requests
 import json
 from random import randint
+from random import shuffle
 from time import sleep, time
 from bs4 import BeautifulSoup as soup
 from progress.bar import IncrementalBar
@@ -19,7 +20,7 @@ def bubbleRatingVal(tags):
 def getAvgReview():
     pass
 
-def makeReviewPageLinks(bs_obj, reviews= 10, nofHotels = 10):
+def makeReviewPageLinks(bs_obj, reviews = 10, nofHotels = 10):
     """ TripAdvisor review pages links for city-specific hotels """
     tripadvisor_url = "https://www.tripadvisor.com"
     hotel_links = []
@@ -47,36 +48,69 @@ def makeReviewPageLinks(bs_obj, reviews= 10, nofHotels = 10):
     return hotel_links
 
 def get(link):
+    ''' converting URL to beautiful soup object'''
+    r = None
     try:
-        r = requests.get(link, timeout=5)
-        return r
+        r = requests.get(link, timeout=5).text
     except requests.exceptions.Timeout:
     # continue in a retry loop
         sleep(1)
         get(link)
+    except requests.exceptions.ConnectionError:
+        sleep(1)
+        get(link)
     # except requests.exceptions.TooManyRedirects:
-    # # Tell the user their URL was bad and try a different one
-    # except requests.exceptions.RequestException as e:
-    # # catastrophic error. bail.
-    #     raise SystemExit(e)
+        # Tell the user their URL was bad and try a different one
+    except requests.exceptions.RequestException as e:
+        print(f"Faced {e}, retrying")
+        sleep(1)
+        get(link)
+        # when catastrophic error. bail.
+        # raise SystemExit(e)
+    
+    # Making BeautifulSoup Object
+    if r is not None: 
+        r_bs_obj = soup(r, 'html.parser')
+        if r_bs_obj is not None:
+            return r_bs_obj
+        else:
+            sleep(0.5)
+            get(link)
+    else:
+        get(link)
     
 def reviewExtract(hotel_links):
     city_dict = dict()
+    # Status checking setup
     start = time()
     bar = IncrementalBar('Extracting Hotel Reviews', max = len(hotel_links), suffix='%(percent)d%%')
+    
     for link in hotel_links:
+        sleep(randint(1,3))
         # print(link)
-        # sleep(randint(1,2))
-        review_page = get(link)
-        reviews = soup(review_page.content, 'html.parser')
+        reviews = get(link)   # deprecated from review_page to reviews
+        sleep(1)
+        # print(type(reviews), link)
+        if reviews is not None:
+            pass
+        else:
+            print(f"\nNoneType response found in:\n{link}, retrying")
+            reviews = get(link)
+            # reviews = soup(reviews.content, 'html.parser')
 
         # Saving hotel name to append page reviews appropriately
-        hotel_name = reviews.find('h1').get_text()
+        try:
+            hotel_name = reviews.find('h1')
+            hotel_name = hotel_name.get_text()
+        except AttributeError:
+            print(f"No heading found in:\n{link}")
+        
+        # Setting review index numbers
         if hotel_name in city_dict:
             ids = city_dict[hotel_name]['reviews'].keys()
             counter = int(list(ids)[-1]) + 1
         else:
-            city_dict[hotel_name] = {'reviews': {}}
+            city_dict[hotel_name] = {'avg_rating': None,'reviews': {}}
             counter = 1
         # print(hotel_name, '\n')
         
@@ -101,13 +135,13 @@ if __name__=="__main__":
     nofHotels = int(input("Hotels: "))
     fileName = input("Output file Name: ")
 
-    city_page = get(city_url)
+    city_page = requests.get(city_url)
     bs_obj = soup(city_page.content, 'html.parser')
 
     print(f"URL Status: {city_page.status_code}")
     
-    hotel_links = makeReviewPageLinks(bs_obj, reviews_demand, nofHotels=nofHotels)
-    data = reviewExtract(hotel_links)
+    hotel_links = makeReviewPageLinks(bs_obj, reviews=reviews_demand, nofHotels=nofHotels)
+    data = reviewExtract(Alexandra)
 
     # Export reviews to JSON file
 
