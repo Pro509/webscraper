@@ -141,7 +141,7 @@ if __name__=="__main__":
     print(f"URL Status: {city_page.status_code}")
     
     hotel_links = makeReviewPageLinks(bs_obj, reviews=reviews_demand, nofHotels=nofHotels)
-    data = reviewExtract(Alexandra)
+    data = reviewExtract(hotel_links)
 
     # Export reviews to JSON file
 
