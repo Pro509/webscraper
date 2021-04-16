@@ -1,8 +1,7 @@
 import os
 import requests
 import json
-from random import randint
-from random import shuffle
+from random import randint, shuffle
 from time import sleep, time
 from bs4 import BeautifulSoup as soup
 from progress.bar import IncrementalBar
@@ -16,9 +15,12 @@ def bubbleRatingVal(tags):
     rating = rating[1]
     return int(rating[(rating.find('_')+1):(rating.find('_')+3)])
 
-# Implemntation remaining
-def getAvgReview():
-    pass
+def getAvgRating(reviews_page):
+    '''Gets the average rating of the hotel based on all reviews'''
+    rating_obj = reviews_page.find('div', {'class':'kVNDLtqL'}).get_text()
+    # Test: print(rating_obj) = '4.5Excellent2,385 reviews'
+    Avg_rating = int(float(rating_obj[:3])*10)
+    return Avg_rating
 
 def makeReviewPageLinks(bs_obj, reviews = 10, nofHotels = 10):
     """ TripAdvisor review pages links for city-specific hotels """
@@ -48,7 +50,7 @@ def makeReviewPageLinks(bs_obj, reviews = 10, nofHotels = 10):
     return hotel_links
 
 def get(link):
-    ''' converting URL to beautiful soup object'''
+    '''Converting URL to beautiful soup object: Forceful and ensures task completion'''
     r = None
     try:
         r = requests.get(link, timeout=5).text
@@ -110,7 +112,8 @@ def reviewExtract(hotel_links):
             ids = city_dict[hotel_name]['reviews'].keys()
             counter = int(list(ids)[-1]) + 1
         else:
-            city_dict[hotel_name] = {'avg_rating': None,'reviews': {}}
+            hotel_rating = getAvgRating(reviews)
+            city_dict[hotel_name] = {'avg_rating': hotel_rating,'reviews': {}}
             counter = 1
         # print(hotel_name, '\n')
         
@@ -141,10 +144,9 @@ if __name__=="__main__":
     print(f"URL Status: {city_page.status_code}")
     
     hotel_links = makeReviewPageLinks(bs_obj, reviews=reviews_demand, nofHotels=nofHotels)
-    data = reviewExtract(Alexandra)
+    data = reviewExtract(hotel_links)
 
     # Export reviews to JSON file
-
     with open(os.path.join('test output', f'{fileName}.json'), 'w') as outfile:
         json.dump(data, outfile, indent=4)
 
