@@ -54,19 +54,13 @@ def get(link):
     r = None
     try:
         r = requests.get(link, timeout=5).text
-    except requests.exceptions.Timeout:
+    except (requests.exceptions.Timeout, requests.exceptions.ConnectionError, requests.exceptions.RequestException) as e:
     # continue in a retry loop
-        sleep(1)
-        get(link)
-    except requests.exceptions.ConnectionError:
+        print(f"Faced {e}, retrying")
         sleep(1)
         get(link)
     # except requests.exceptions.TooManyRedirects:
         # Tell the user their URL was bad and try a different one
-    except requests.exceptions.RequestException as e:
-        print(f"Faced {e}, retrying")
-        sleep(1)
-        get(link)
         # when catastrophic error. bail.
         # raise SystemExit(e)
     
