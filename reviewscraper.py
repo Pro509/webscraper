@@ -22,6 +22,10 @@ def getAvgRating(reviews_page):
     Avg_rating = int(float(rating_obj[:3])*10)
     return Avg_rating
 
+def getHotelAddress(reviews_page):
+    hotel_address = reviews_page.find('span', {'class':'_3ErVArsu jke2_wbp'}).get_text()
+    return hotel_address
+
 def makeReviewPageLinks(bs_obj, reviews = 10, nofHotels = 10):
     """ TripAdvisor review pages links for city-specific hotels """
     tripadvisor_url = "https://www.tripadvisor.com"
@@ -73,8 +77,8 @@ def get(link):
             sleep(0.5)
             get(link)
     else:
-        get(link)
-    
+        get(link)   
+
 def reviewExtract(hotel_links):
     city_dict = dict()
     # Status checking setup
@@ -107,7 +111,8 @@ def reviewExtract(hotel_links):
             counter = int(list(ids)[-1]) + 1
         else:
             hotel_rating = getAvgRating(reviews)
-            city_dict[hotel_name] = {'avg_rating': hotel_rating,'reviews': {}}
+            hotel_address = getHotelAddress(reviews)
+            city_dict[hotel_name] = {'address': hotel_address,'avg_rating': hotel_rating,'reviews': {}}
             counter = 1
         # print(hotel_name, '\n')
         
