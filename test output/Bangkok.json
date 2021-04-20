@@ -1,5 +1,6 @@
 {
     "The Peninsula Bangkok Hotel": {
+        "address": "333, Charoen Nakhon Road Khlong Ton Sai, Khlong San, Bangkok 10600 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -405,6 +406,7 @@
         }
     },
     "Chatrium Hotel Riverside Bangkok": {
+        "address": "28 Charoenkrung Soi 70 Wat Phraya Krai, Bang Kho Laem, Bangkok 10120 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -810,6 +812,7 @@
         }
     },
     "The Quarter Ladprao by UHG Hotel, Bangkok": {
+        "address": "Soi Ladprao 4 Ladprao Road, Chom Phon, Chatuchak, Bangkok 10900 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -1215,6 +1218,7 @@
         }
     },
     "The Quarter Phromphong By UHG Hotel, Bangkok": {
+        "address": "31 Soi Sukhumvit 31, Khwaeng Khlong Toei Nuea, Bangkok 10110 Thailand",
         "avg_rating": 50,
         "reviews": {
             "1": {
@@ -1620,6 +1624,7 @@
         }
     },
     "Banyan Tree Bangkok Hotel": {
+        "address": "21/100 South Sathon Road. Thai Wah Tower II, Bangkok 10120 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -2025,6 +2030,7 @@
         }
     },
     "Royal Orchid Sheraton Hotel & Towers, Bangkok": {
+        "address": "2 Charoen Krung Road Soi 30 Siphya, Bangrak, Bangkok 10500 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -2430,6 +2436,7 @@
         }
     },
     "SKYVIEW Hotel Bangkok": {
+        "address": "12, Soi Sukhumvit 24 Khlong Tan, Khlong Toei, Bangkok 10110 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -2835,6 +2842,7 @@
         }
     },
     "The Quarter Ari by UHG Hotel, Bangkok": {
+        "address": "428 Phaholyothin Road in front of Soi 10 Samsen Nai, Phya Thai, Bangkok 10400 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -3240,6 +3248,7 @@
         }
     },
     "Carlton Hotel Bangkok Sukhumvit": {
+        "address": "491 Sukhumvit Road, Khwaeng Klongtoey Nua, Khet Wattana, Bangkok 10110 Thailand",
         "avg_rating": 50,
         "reviews": {
             "1": {
@@ -3625,6 +3634,7 @@
         }
     },
     "Evergreen Place Siam by UHG Hotel, Bangkok": {
+        "address": "318, Phayathai Road Thanon Phetchaburi, Ratchathewi, Bangkok 10400 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -3926,6 +3936,7 @@
         }
     },
     "Novotel Bangkok Platinum Pratunam Hotel": {
+        "address": "220 Petchaburi Road Ratchathewi, Bangkok 10400 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -4331,6 +4342,7 @@
         }
     },
     "Sindhorn Midtown Hotel Bangkok": {
+        "address": "68 Langsuan Road, Bangkok 10330 Thailand",
         "avg_rating": 50,
         "reviews": {
             "1": {
@@ -4736,6 +4748,7 @@
         }
     },
     "Millennium Hilton Bangkok Hotel": {
+        "address": "123 Charoennakorn Road Khlongtonsai, Khlongsan, Bangkok 10600 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -5141,6 +5154,7 @@
         }
     },
     "Siri Sathorn Bangkok by UHG Hotel": {
+        "address": "27 Soi Saladaeng 1, Silom Road, Bangkok 10500 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -5546,6 +5560,7 @@
         }
     },
     "Hotel Verve, Bangkok": {
+        "address": "22/1 Sukhumvit 55 (Soi Thong Lo) Khwaeng Klongton Nue, Khet Wattana, Bangkok 10110 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -5839,6 +5854,7 @@
         }
     },
     "FuramaXclusive Asoke Hotel, Bangkok": {
+        "address": "133/2 Sukhumvit Soi 21, Bangkok 10110 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -6244,6 +6260,7 @@
         }
     },
     "Novotel Bangkok on Siam Square Hotel": {
+        "address": "392/44 Siam Square Soi 6, Bangkok 10330 Thailand",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -6649,6 +6666,7 @@
         }
     },
     "Asoke Residence Sukhumvit by UHG Condominium, Bangkok": {
+        "address": "235/20-25 Sukhumvit 21 , Klong Toey Nue, Wattana, Bangkok 10110 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -6886,6 +6904,7 @@
         }
     },
     "FuramaXclusive Sathorn Hotel, Bangkok": {
+        "address": "59, Soi Silom 3, Silom Road Silom, Bang Rak, Bangkok 10500 Thailand",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -7291,6 +7310,7 @@
         }
     },
     "Alt Hotel Nana by UHG, Bangkok": {
+        "address": "222 Sukhumvit Soi 4 Sub Soi 2 (Nana) Khlong Toei, Khlong Toei, Bangkok 10110 Thailand",
         "avg_rating": 45,
         "reviews": {
             "1": {
