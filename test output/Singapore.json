@@ -1,5 +1,6 @@
 {
     "The Fullerton Hotel Singapore": {
+        "address": "1 Fullerton Square, Singapore 049178 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -405,6 +406,7 @@
         }
     },
     "Shangri-La Hotel, Singapore": {
+        "address": "22 Orange Grove Rd Orchard Road, Singapore 258350 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -810,6 +812,7 @@
         }
     },
     "Pan Pacific Singapore Hotel": {
+        "address": "7 Raffles Boulevard Marina Square, Singapore 039595 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -1215,6 +1218,7 @@
         }
     },
     "Orchard Hotel Singapore": {
+        "address": "442 Orchard Road, Singapore 238879 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -1620,6 +1624,7 @@
         }
     },
     "PARKROYAL COLLECTION Marina Bay, Singapore Hotel": {
+        "address": "6 Raffles Boulevard,Marina Square, Singapore 039594 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -2025,6 +2030,7 @@
         }
     },
     "Marina Bay Sands Hotel, Singapore": {
+        "address": "10 Bayfront Avenue, Singapore 018956 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -2430,6 +2436,7 @@
         }
     },
     "Goodwood Park Hotel, Singapore": {
+        "address": "22 Scotts Road Goodwood Park Hotel, Singapore 228221 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -2835,6 +2842,7 @@
         }
     },
     "Park Hotel Alexandra, Singapore": {
+        "address": "323 Alexandra Road Alexandra Central, Singapore 159972 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -3240,6 +3248,7 @@
         }
     },
     "Park Hotel Clarke Quay, Singapore": {
+        "address": "1 Unity Street, Singapore 237983 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -3645,6 +3654,7 @@
         }
     },
     "PARKROYAL COLLECTION Pickering, Singapore Hotel": {
+        "address": "3 Upper Pickering Street, Singapore 058289 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -4050,6 +4060,7 @@
         }
     },
     "Carlton Hotel Singapore": {
+        "address": "76 Bras Basah Rd, Singapore 189558 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -4860,6 +4871,7 @@
         }
     },
     "YOTEL Singapore Hotel": {
+        "address": "366 Orchard Road Yotel Singapore Orchard Road, Singapore 238904 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -5265,6 +5277,7 @@
         }
     },
     "Ascott Orchard Singapore Hotel": {
+        "address": "11 Cairnhill Road Ascott Orchard Singapore, Singapore 229724 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -5670,6 +5683,7 @@
         }
     },
     "Mandarin Orchard Singapore Hotel": {
+        "address": "333 Orchard Road, Singapore 238867 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -6055,6 +6069,7 @@
         }
     },
     "Lloyd's Inn Singapore Hotel": {
+        "address": "2 Lloyd Road Lloyd's Inn, Singapore 239091 Singapore",
         "avg_rating": 45,
         "reviews": {
             "1": {
@@ -6460,6 +6475,7 @@
         }
     },
     "Grand Park Orchard Hotel, Singapore": {
+        "address": "270 Orchard Road Grand Park Orchard, Singapore 238857 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -6865,6 +6881,7 @@
         }
     },
     "Hotel NuVe Heritage, Singapore": {
+        "address": "13 Purvis Street, Singapore 188592 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -7270,6 +7287,7 @@
         }
     },
     "Hotel G Singapore": {
+        "address": "200 Middle Road Hotel G Singapore, Singapore 188980 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
@@ -7675,6 +7693,7 @@
         }
     },
     "YOTELAIR Singapore Changi Airport Hotel": {
+        "address": "78 Airport Boulevard #04-280, Singapore 819666 Singapore",
         "avg_rating": 40,
         "reviews": {
             "1": {
