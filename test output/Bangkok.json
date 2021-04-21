@@ -403,7 +403,12 @@
                 "review_text": "This is a fantastic hotel with really good rates at the right time of the year. The levels of service and luxury exceed most hotels in the world and as it is just across the river, it may put some people off. However a really frequent shuttle service across the river negates this and enables you to fully enjoy the city. All the rooms have river views and the level of service from the hotel is brilliant with nothing too much trouble. Our conference, comprising of 100 people, felt that they had been treated like nobility.",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 46.8,
+        "geocode": [
+            100.58333,
+            14.33333
+        ]
     },
     "Chatrium Hotel Riverside Bangkok": {
         "address": "28 Charoenkrung Soi 70 Wat Phraya Krai, Bang Kho Laem, Bangkok 10120 Thailand",
@@ -809,7 +814,12 @@
                 "review_text": "Visited Bangkok between 7th and 10th March. This was first trip to Thailand and the hotel exceeded my expectations.   The greeting was great and check-in was very speedy. The hotel itself is very clean, modern, contemporary and welcoming.   Our room was amazing and had fabulous views across Bangkok. It had everything I needed including kitchen, office space, balcony, safe, iron and ironing board.   The location of the hotel was good. We, perhaps stupidly, walked to Lumpini Park from the hotel to get to see a bit of Bangkok on foot. Very hot and sweaty. We used the free shuttle to the main ferry terminal which was incredibly convenient. The ferry then takes you to various attractions - you can even hop on other hotel ferries if you are going there for a drink/meal.   We came back\u2026",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 48.7,
+        "geocode": [
+            100.505683,
+            13.706962
+        ]
     },
     "The Quarter Ladprao by UHG Hotel, Bangkok": {
         "address": "Soi Ladprao 4 Ladprao Road, Chom Phon, Chatuchak, Bangkok 10900 Thailand",
@@ -1215,7 +1225,12 @@
                 "review_text": "I was very pleased with my stay. The staff was very helpful and friendly. Oum was especially pleasant to deal with. Rooms were clean and location was central to food and shopping. I would recommend if you are looking for a hotel in the area.",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 47.9,
+        "geocode": [
+            100.563321,
+            13.81711
+        ]
     },
     "The Quarter Phromphong By UHG Hotel, Bangkok": {
         "address": "31 Soi Sukhumvit 31, Khwaeng Khlong Toei Nuea, Bangkok 10110 Thailand",
@@ -1621,7 +1636,12 @@
                 "review_text": "Great new place in central location on Sukhumvit Soi 31 area with plenty of restaurants in the vicinity to choose from. Clean and comfortable rooms, likewise super-helpful service by Khun Aum and Khun Beam at the reception.",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 48.7,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "Banyan Tree Bangkok Hotel": {
         "address": "21/100 South Sathon Road. Thai Wah Tower II, Bangkok 10120 Thailand",
@@ -2027,7 +2047,12 @@
                 "review_text": "After long lock down from covid-19, We have chosen dine n unwind pack for our short trip spended at BT Bkk.  A check-in expirence was way too good n unique. We were invited to sit n relax with the welcome drinks, done nothing just only handed to reception the id, credit card with not too long process.  Jackie the concierge accomodating us shown around the hotel facilities ,restaurants chart which are currently openned for dine n unwind, suggestion dining tips and useful information all the way escorting us to a fantastic suite. Dinner we had to go for Bai Yun a back up since Vertigo was under raining, what a pitty but ok. At night, we had some techincal issued by a guest room next door BUT the front desk, security and bellman (Khun Korn) resovled it quickly by transfer us to\u2026",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 47,
+        "geocode": [
+            100.520892,
+            13.718254
+        ]
     },
     "Royal Orchid Sheraton Hotel & Towers, Bangkok": {
         "address": "2 Charoen Krung Road Soi 30 Siphya, Bangrak, Bangkok 10500 Thailand",
@@ -2433,7 +2458,12 @@
                 "review_text": "Stayed here on a number of occasions. Great location, right on the river with a complimentary hotel boat service. Staff are so friendly, helpful and polite. Rooms are large (most have river views), clean and well presented. All the features you\u2019d expect of a 5 star hotel - cable TV, king bed, safe, bar fridge etc. 2x outdoor pools to choose from and the food in the restaurants is of a high standard. The breakfast buffet especially is excellent. Best hotel in Bangkok..",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 44.2,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "SKYVIEW Hotel Bangkok": {
         "address": "12, Soi Sukhumvit 24 Khlong Tan, Khlong Toei, Bangkok 10110 Thailand",
@@ -2839,7 +2869,12 @@
                 "review_text": "i am a frequent traveler to Thailand , tried many hotels in Bangkok for the last 15 years with mu hobby to change hote and never stay in a same hotel if didnot satisfy my needs , for the last 3 years I knew that there is a hotel named Skyview in soi 24 which i really like as it is very closed to my favourit Seafood restaurant ,so I put in my mind to try this hotel(Skyview Compass Hotel) . As a matter of fact , Ihad been fascinated by this fabulous hotel for its convinient location very close to the entetainment area in soi 24 , very close the Bts skytrain and very cloe the luxurious shopping mall , so since that time I decided to take this hotel as my sole option and never ever think of moving other hotels . Every year I used to stay atleast 2 or 3 times in Skyview hotel with\u2026",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 45.3,
+        "geocode": [
+            100.579005,
+            13.722556
+        ]
     },
     "The Quarter Ari by UHG Hotel, Bangkok": {
         "address": "428 Phaholyothin Road in front of Soi 10 Samsen Nai, Phya Thai, Bangkok 10400 Thailand",
@@ -3245,7 +3280,12 @@
                 "review_text": "I found this hotel really comfortable..The first thing I and my girlfriend always look to is the cleanliness of the room... Just one hair under the sheet...by the way the rest was really clean(included the bathroom). Mattress comfortable. Views from the room as from the rooftop pool spectacular. Probably the area is not the center but ari is getting more and more vital",
                 "rating": 40
             }
-        }
+        },
+        "comment_rating": 43.7,
+        "geocode": [
+            -95.041557,
+            33.159406
+        ]
     },
     "Carlton Hotel Bangkok Sukhumvit": {
         "address": "491 Sukhumvit Road, Khwaeng Klongtoey Nua, Khet Wattana, Bangkok 10110 Thailand",
@@ -3631,7 +3671,12 @@
                 "review_text": "Had to stop in today for a quick spot if coffee before work. The service was lovely and the coffee was delicious. The barista whose name I believe was \"Regade\" was very kind when greeting me and of course made a great coffee. I was made to feel very comfortable and the lobby area was stunning! Will be back! Cheers ",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 49.36842105263158,
+        "geocode": [
+            100.5719346,
+            13.7289055
+        ]
     },
     "Evergreen Place Siam by UHG Hotel, Bangkok": {
         "address": "318, Phayathai Road Thanon Phetchaburi, Ratchathewi, Bangkok 10400 Thailand",
@@ -3933,7 +3978,12 @@
                 "review_text": "This hotel has a great location, close as it is to the airport, but still down town. It\u2019s a sky train station very near by (3 minutes walk), fab\u2019 shopping in the hood and great, short walks takes you to amongst (other destinations), the Jim Thompson House. Rooms are huge enough, bathroom efficient, swimming pool (at the 8th floor) cool enough and breakfast totally ok. Service is superb! Price wise ok too! In other words: Convenient for a stop over!",
                 "rating": 40
             }
-        }
+        },
+        "comment_rating": 45.54054054054054,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "Novotel Bangkok Platinum Pratunam Hotel": {
         "address": "220 Petchaburi Road Ratchathewi, Bangkok 10400 Thailand",
@@ -4339,7 +4389,12 @@
                 "review_text": "The hotel novotel platinum is absolutely phenomenal and the service here is out of this world..but one that particularly stood out was a staff named monk...she went all out the make sure we get what we want and made 100% sure we are comfortable with everything. Staff eddy also is being very helpful.. even house keeping staff is excellent .   Visited the spa and it's not too expensive if u really compare the good spa outside but the noise level is not too good can keep hearing the bar music . Nonetheless the ladies that help us better is very good .   Breakfast is passable to be mention .   When we arrives at 11 plus am .. we are very fortunate to be able to get early check in .. and they check if we wan late checks out which we need .. and maybe because as executive suite we\u2026",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 49.5,
+        "geocode": [
+            100.541595,
+            13.754578
+        ]
     },
     "Sindhorn Midtown Hotel Bangkok": {
         "address": "68 Langsuan Road, Bangkok 10330 Thailand",
@@ -4745,7 +4800,12 @@
                 "review_text": "We stayed at the hotel for a birthday weekend celebration. The staff upon arrival were very friendly and extremely helpful - they also provided us with a gorgeous cake and welcome fruit platter in celebration of the birthday. The pool and bar was also great - the amenities were well thought out. Highly recommend for those wishing to stay in Bangkok to choose this hotel. Upon departure, the doormen helped us with our luggage and made sure our transport was sufficient. Overall, a really pleasant and happy experience. Will definitely come back and recommend to all friends.",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 49.5,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "Millennium Hilton Bangkok Hotel": {
         "address": "123 Charoennakorn Road Khlongtonsai, Khlongsan, Bangkok 10600 Thailand",
@@ -5151,7 +5211,12 @@
                 "review_text": "The most disorganized staff I've ever seen. 1st desk clerk hassled us upon check in and made us check into 1 of our 2 rooms after midnight. Later (after we got back after midnight) 2nd desk told us the room we had reserved was occupied and we couldn't have the room we paid (points) for months ago. Then the manager gave us the run-a-round. Terrible staff!",
                 "rating": 20
             }
-        }
+        },
+        "comment_rating": 43.2,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "Siri Sathorn Bangkok by UHG Hotel": {
         "address": "27 Soi Saladaeng 1, Silom Road, Bangkok 10500 Thailand",
@@ -5557,7 +5622,12 @@
                 "review_text": "This is our 4th time to came to Bangkok, and also 4th time chooses Siri Sathorn hotel.  Room has amazing space, and environment is so nice, clean and so quite, and the bed is so nice for sleeping!  Fitness and swimming pool are also great for relaxing during thr trip  Staff are also really nice!!  for us! definitely 5 stars \u2b50\ufe0f \u2b50\ufe0f \u2b50\ufe0f \u2b50\ufe0f \u2b50\ufe0f",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 43.6,
+        "geocode": [
+            100.538691,
+            13.725366
+        ]
     },
     "Hotel Verve, Bangkok": {
         "address": "22/1 Sukhumvit 55 (Soi Thong Lo) Khwaeng Klongton Nue, Khet Wattana, Bangkok 10110 Thailand",
@@ -5851,7 +5921,12 @@
                 "review_text": "We chose Bangkok for our new year destination as we love the Thai hospitality The hotel is new and the staff are friendly. The location is closed to BTS plus we can reach the city center easily Would be great if we could have had longer time here",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 48.19444444444444,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "FuramaXclusive Asoke Hotel, Bangkok": {
         "address": "133/2 Sukhumvit Soi 21, Bangkok 10110 Thailand",
@@ -6257,7 +6332,12 @@
                 "review_text": "Hotel is nice location. Very convenient near by Shopping centre Teminal 21,Robinson and Soi cowboy at the Sukhumvit road. The room clean also staff very nice service. Thank you for good service Dream, Run,Korn,Jane and Dear. All is very good . Next month will come again.",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 47.1,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "Novotel Bangkok on Siam Square Hotel": {
         "address": "392/44 Siam Square Soi 6, Bangkok 10330 Thailand",
@@ -6663,7 +6743,12 @@
                 "review_text": "I am visiting this hotel since merely twenty years, mainly due to its location. This time was  very mixed experience.  Check in took twenty minutes, despite nobody in front of me. Just slow staff. Finally reaching the room, both provided key cards didn't function,and the door could not be opened. Returned to reception, after further ten minutes, I had two new keys, which worked.  Due to my status, I received welcome drinks vouchers for the bar. Pretty much to my surprise, I was told, today no beer on stock - can you imagine ? Only imported brands, but those not on voucher. However, next day local beer on voucher was available.  Thought over the years, I would know ll the room types, and wouldn't need adapters s three pin sockets be available. However, when doing work, I\u2026",
                 "rating": 30
             }
-        }
+        },
+        "comment_rating": 43.9,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "Asoke Residence Sukhumvit by UHG Condominium, Bangkok": {
         "address": "235/20-25 Sukhumvit 21 , Klong Toey Nue, Wattana, Bangkok 10110 Thailand",
@@ -6901,7 +6986,12 @@
                 "review_text": "It is close to transport hubs, pier/subway/airport link. My room was of decent size with good shower and aircon. The service was attentive and I want to especially mention Nu at the reception who arranged a car for my day tour at a reasonable price. ",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 47.241379310344826,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     },
     "FuramaXclusive Sathorn Hotel, Bangkok": {
         "address": "59, Soi Silom 3, Silom Road Silom, Bang Rak, Bangkok 10500 Thailand",
@@ -7307,7 +7397,12 @@
                 "review_text": "Staff was friendly they name Mint and Thing Thing very helpful to advise information and the room is comfortable, cleanliness. The location is convenient close to the business district and sky train station.",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 46,
+        "geocode": [
+            100.530221,
+            13.727324
+        ]
     },
     "Alt Hotel Nana by UHG, Bangkok": {
         "address": "222 Sukhumvit Soi 4 Sub Soi 2 (Nana) Khlong Toei, Khlong Toei, Bangkok 10110 Thailand",
@@ -7713,6 +7808,11 @@
                 "review_text": "This hotel is the best for it price. You don't have to pay to expensive to get good service. This one is superb! Upgraded my room, great breakfast, good service with their tuk2 to the main road. Quite swimming pool, comfy bed, friendly staff need to be highlighted! They let me swim when the pool supposed to be close at 10 pm.   Only 10 mins away to bts nana. It's not holiday if you don't want to walk right? 10 mins actually is nothing, but mostly you can get the shuttle tuktuk from the hotel.  Definitely will come back to this hotel if am in Bangkok again. ",
                 "rating": 50
             }
-        }
+        },
+        "comment_rating": 44.6,
+        "geocode": [
+            100.644533,
+            13.881591
+        ]
     }
 }
