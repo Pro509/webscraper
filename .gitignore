@@ -127,7 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-.vscode/settings.json
+.vscode/
 .gitignore
 .DS_Store
 #PD509 remove DS Store: find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch
