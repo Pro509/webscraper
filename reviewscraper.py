@@ -9,11 +9,16 @@ from progress.bar import IncrementalBar
 def StrToInt(text):
     return int(text.replace(',',''))
 
-def bubbleRatingVal(tags):
-    rating = [value for element in tags.find_all(class_=True) 
-        for value in element["class"]]
-    rating = rating[1]
-    return int(rating[(rating.find('_')+1):(rating.find('_')+3)])
+def bubbleRatingVal(review):
+    # OLD METHOD, WOULD TAKE IN RATING TAG
+    # rating = [value for element in tags.find_all(class_=True) 
+    #     for value in element["class"]]
+    # rating = rating[1]
+    # return int(rating[(rating.find('_')+1):(rating.find('_')+3)])
+
+    rating_tag = review.select(".ui_bubble_rating")[0]
+    rating = rating_tag.get_attribute_list('class')[1]
+    return int(rating.replace("bubble_",""))
 
 def getAvgRating(reviews_page):
     '''Gets the average rating of the hotel based on all reviews'''
@@ -119,10 +124,7 @@ def reviewExtract(hotel_links):
         for r in reviews.findAll('div', {'data-test-target':'HR_CC_CARD'}):
             # print(r,'\n')
             review_text = r.find('q').get_text() #r.span.text.strip()
-            bubble = r.find('div', {'data-test-target':'review-rating'})
-            rating = bubbleRatingVal(bubble)
-            # print(rating)
-            city_dict[hotel_name]['reviews'].update({f'{counter}': {'review_text': review_text, 'rating': rating}})
+            city_dict[hotel_name]['reviews'].update({f'{counter}': {'review_text': review_text, 'rating': bubbleRatingVal(r)}})
             counter += 1
             # print(review_text, '\n')
         bar.next()
